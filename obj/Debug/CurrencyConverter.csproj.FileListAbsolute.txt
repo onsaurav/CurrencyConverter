@@ -1,0 +1,15 @@
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\bin\Debug\CurrencyConverter.exe.config
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\bin\Debug\CurrencyConverter.exe
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\bin\Debug\CurrencyConverter.pdb
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.csprojAssemblyReference.cache
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\MainWindow.g.cs
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\App.g.cs
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter_MarkupCompile.cache
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter_MarkupCompile.lref
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\MainWindow.baml
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.g.resources
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.Properties.Resources.resources
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.csproj.GenerateResource.cache
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.csproj.CoreCompileInputs.cache
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.exe
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.pdb

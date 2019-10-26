@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ConverterService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://currencyconverterservice.com/ConverterService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://currencyconverterservice.com/ConverterService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IConverterService_ReplaceCommaBypoint_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReplaceCommaBypoint" />
+  </wsdl:message>
+  <wsdl:message name="IConverterService_ReplaceCommaBypoint_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReplaceCommaBypointResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConverterService_CurrencyInWord_InputMessage">
+    <wsdl:part name="parameters" element="tns:CurrencyInWord" />
+  </wsdl:message>
+  <wsdl:message name="IConverterService_CurrencyInWord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CurrencyInWordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IConverterService">
+    <wsdl:operation name="ReplaceCommaBypoint">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConverterService/ReplaceCommaBypoint" message="tns:IConverterService_ReplaceCommaBypoint_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConverterService/ReplaceCommaBypointResponse" message="tns:IConverterService_ReplaceCommaBypoint_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CurrencyInWord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConverterService/CurrencyInWord" message="tns:IConverterService_CurrencyInWord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConverterService/CurrencyInWordResponse" message="tns:IConverterService_CurrencyInWord_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IConverterService" type="tns:IConverterService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReplaceCommaBypoint">
+      <soap:operation soapAction="http://tempuri.org/IConverterService/ReplaceCommaBypoint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CurrencyInWord">
+      <soap:operation soapAction="http://tempuri.org/IConverterService/CurrencyInWord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConverterService">
+    <wsdl:port name="BasicHttpBinding_IConverterService" binding="tns:BasicHttpBinding_IConverterService">
+      <soap:address location="http://currencyconverterservice.com/ConverterService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
