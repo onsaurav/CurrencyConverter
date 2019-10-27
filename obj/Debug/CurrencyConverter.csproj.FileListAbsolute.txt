@@ -13,3 +13,7 @@ G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConver
 G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.csproj.CoreCompileInputs.cache
 G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.exe
 G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\CurrencyConverter.pdb
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\Control\ucConverter.g.cs
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\Control\ucInformation.g.cs
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\Control\ucConverter.baml
+G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\Control\ucInformation.baml
