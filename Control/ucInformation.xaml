@@ -7,9 +7,17 @@
              mc:Ignorable="d" Background="White"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock Grid.Row="2" Margin="2,2,2,2" FontSize="14">
-            <Run FontWeight="Bold" Text="Instruction:" /><LineBreak/>
-            This the information page.
+        <TextBlock Grid.Row="2" Margin="2,2,2,2" FontSize="14" TextWrapping="Wrap">
+            <Run FontWeight="Bold" Text="Information:" /><LineBreak/><LineBreak/>
+            A program which converts currency (dollars)<LineBreak/>from numbers into word presentation.<LineBreak/><LineBreak/>
+            
+            Tools and Technology:<LineBreak/>
+            • .NET framework 4.7.2<LineBreak/>
+            • Client-server architecture, implemented using WCF.<LineBreak/>
+            • Parsing and converting are implemented on the server side.
+            
+            <LineBreak/><LineBreak/>
+            Inside the solution a folder with published WCF service. After hosting that published service into IIS, we have to update the endpoint in endpoint. 
         </TextBlock>
     </Grid>
 </UserControl>

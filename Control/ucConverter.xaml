@@ -23,7 +23,7 @@
                 <ColumnDefinition Width="300*"/>
                 <ColumnDefinition Width="125"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="txtCurrency" Height="40" HorizontalAlignment="Left" Text="" Margin="0,3" Width="375" FontSize="24"/>
+            <TextBox x:Name="txtCurrency" Height="40" HorizontalAlignment="Left" Text="" Margin="0,3" Width="375" FontSize="24" PreviewTextInput="NumberValidationTextBox" />
             <Button Grid.Column="1" x:Name="btnConvert" Height="40" HorizontalAlignment="Right" Width="125" Content="Convert" FontSize="16" Click="BtnConvert_Click"/>
         </Grid>
 

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Debug\
+G:\My Soft\CurrencyConverter\CurrencyConverter\obj\Debug\
 CurrencyConverter
 none
 false
 DEBUG;TRACE
-G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\App.xaml
-11151548125
+G:\My Soft\CurrencyConverter\CurrencyConverter\App.xaml
+31886312522
 
-6-2011650467
-13-1505183044
-MainWindow.xaml;
+12718440914
+19460144435
+Control\ucConverter.xaml;Control\ucInformation.xaml;Home.xaml;
 
-True
+False
 

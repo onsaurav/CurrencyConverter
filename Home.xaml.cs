@@ -1,5 +1,6 @@
 ﻿using CurrencyConverter.Control;
-using CurrencyConverter.CurrencyConverterService;
+using CurrencyConverter.Helper;
+using CurrencyConverterModel.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,11 +21,14 @@ namespace CurrencyConverter
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Home : Window
     {
-        public MainWindow()
+        private StackPanelLoadHelper stackPanelLoadHelper;
+
+        public Home()
         {
             InitializeComponent();
+            stackPanelLoadHelper = new HomeStackPanelLoader(stkMain);
         }
 
         private void ImgClose_MouseDown(object sender, MouseButtonEventArgs e)
@@ -34,7 +38,7 @@ namespace CurrencyConverter
 
         private static void ExitApplication()
         {
-            if (MessageBox.Show("Do you want to close this application?", "Exit Application", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (MessageBox.Show(Constant.APP_CLOSE_MSG, "Exit Application", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 Application.Current.Shutdown();
         }
 
@@ -45,27 +49,22 @@ namespace CurrencyConverter
 
         private void BtnInformation_Click(object sender, RoutedEventArgs e)
         {
-            LoadControl("Information");
+            LoadControl(Constant.INFORMATION_CONTROL_TAG);
         }
 
         private void LoadControl(string tag)
         {
-            stkMain.Children.Clear();
-
-            if (tag == "Convert")
-                stkMain.Children.Add(new ucConverter());
-            else if(tag == "Information")
-                stkMain.Children.Add(new ucInformation());
+            stackPanelLoadHelper.LoadControlByTag(tag);
         }
 
         private void BtnConvert_Click(object sender, RoutedEventArgs e)
         {
-            LoadControl("Convert");
+            LoadControl(Constant.CONVERT_CONTROL_TAG);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            LoadControl("Convert");
+            LoadControl(Constant.CONVERT_CONTROL_TAG);
         }
     }
 }

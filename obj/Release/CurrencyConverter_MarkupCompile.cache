@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\obj\Release\
+G:\My Soft\CurrencyConverter\CurrencyConverter\obj\Release\
 CurrencyConverter
 none
 false
 TRACE
-G:\My Soft\Practice\CurrencyConverter\CurrencyConverter\App.xaml
-3515540398
+G:\My Soft\CurrencyConverter\CurrencyConverter\App.xaml
+31886312522
 
-8910603054
-17450701235
-Control\ucConverter.xaml;Control\ucInformation.xaml;MainWindow.xaml;
+12718440914
+19-1623621426
+Control\ucConverter.xaml;Control\ucInformation.xaml;Home.xaml;
 
-False
+True
 
